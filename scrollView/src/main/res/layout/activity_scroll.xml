@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="模仿webView 当TextView 滑动出屏幕后显示底部的按钮
+            当滑动进入屏幕的时候隐藏底部的按钮"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
 
         <com.richzjc.lib.FundRankRecycleView
             android:id="@+id/recycleView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
