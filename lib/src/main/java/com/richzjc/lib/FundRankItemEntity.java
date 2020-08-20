@@ -1,4 +1,4 @@
-package com.richzjc.fundrank;
+package com.richzjc.lib;
 
 import android.graphics.Color;
 import android.os.Parcel;

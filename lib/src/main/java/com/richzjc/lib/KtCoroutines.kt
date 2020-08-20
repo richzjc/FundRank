@@ -1,4 +1,4 @@
-package com.richzjc.fundrank
+package com.richzjc.lib
 
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope

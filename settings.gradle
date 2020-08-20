@@ -1,2 +1,4 @@
+include ':lib'
+include ':scrollView'
 include ':app'
 rootProject.name = "FundRank"

@@ -1,4 +1,4 @@
-package com.richzjc.fundrank
+package com.richzjc.lib
 
 import android.view.View
 import android.widget.TextView

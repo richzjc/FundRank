@@ -1,4 +1,4 @@
-package com.richzjc.fundrank
+package com.richzjc.lib
 
 import android.content.Context
 import android.text.TextUtils
@@ -32,7 +32,11 @@ class FundRankRecycleView @JvmOverloads constructor(
         } else {
             val group = rightScroll.parent as ViewGroup
             val tempParams = ViewGroup.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT)
-            val scrollView = RankHorizontalScrollView(this, context)
+            val scrollView =
+                RankHorizontalScrollView(
+                    this,
+                    context
+                )
             group.removeView(rightScroll)
             scrollView.tag = child
             scrollView.addView(rightScroll, tempParams)

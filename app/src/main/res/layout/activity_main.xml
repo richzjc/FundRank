@@ -6,7 +6,7 @@
     android:background="#f8f8f8"
     android:orientation="vertical">
 
-    <com.richzjc.fundrank.FundRankRecycleView
+    <com.richzjc.lib.FundRankRecycleView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

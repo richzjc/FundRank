@@ -1,4 +1,4 @@
-package com.richzjc.fundrank
+package com.richzjc.lib
 
 import android.view.LayoutInflater
 import android.view.View
