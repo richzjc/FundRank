@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="底部的按钮"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:textColor="#ffffff"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"/>

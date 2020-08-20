@@ -21,7 +21,7 @@
 
 
     <TextView
-        android:id="@+id/scroll_demo"
+        android:id="@+id/scroll_demo0"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -30,7 +30,33 @@
         android:textSize="15sp"
         android:textColor="#ffffff"
         android:background="#000000"
-        android:text="ScrollView_滑动Demo"
+        android:text="ScrollView_滑动Demo + 已付费"
+        />
+
+    <TextView
+        android:id="@+id/scroll_demo1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:text="ScrollView_滑动Demo + 未付费 + 数据多"
+        />
+
+    <TextView
+        android:id="@+id/scroll_demo2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:text="ScrollView_滑动Demo + 未付费 + 数据少"
         />
 
 </LinearLayout>

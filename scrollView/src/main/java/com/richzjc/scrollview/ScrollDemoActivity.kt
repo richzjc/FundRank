@@ -10,12 +10,18 @@ class ScrollDemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scroll)
+
+        val isPaid = intent.getBooleanExtra("isPaid", true)
+        ss_ll?.isPaid = isPaid
+
         val adapter = FundRankAdapter()
         recycleView?.adapter = adapter
 
 
         val list = ArrayList<com.richzjc.lib.FundRankItemEntity>()
-        (0 until 50)?.forEach {
+        val number = intent.getIntExtra("number", 3)
+
+        (0 until number)?.forEach {
 
             var itemEntity = com.richzjc.lib.FundRankItemEntity()
             itemEntity.code = "123456"

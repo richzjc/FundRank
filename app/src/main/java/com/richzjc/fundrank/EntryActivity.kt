@@ -19,8 +19,31 @@ class EntryActivity : AppCompatActivity() {
             startActivity(Intent(this@EntryActivity, MainActivity::class.java))
         }
 
-        scroll_demo?.setOnClickListener {
-            startActivity(Intent(this@EntryActivity, ScrollDemoActivity::class.java))
+        scroll_demo0?.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putInt("number", 50)
+            bundle.putBoolean("isPaid", true)
+            val intent = Intent(this@EntryActivity, ScrollDemoActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
+        scroll_demo1?.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putInt("number", 50)
+            bundle.putBoolean("isPaid", false)
+            val intent = Intent(this@EntryActivity, ScrollDemoActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
+        scroll_demo2?.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putInt("number", 1)
+            bundle.putBoolean("isPaid", false)
+            val intent = Intent(this@EntryActivity, ScrollDemoActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
         }
     }
 }

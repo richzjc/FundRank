@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    >
 
-    <LinearLayout
+<com.richzjc.scrollview.MyNestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.richzjc.scrollview.ScrollLinearLayout
+        android:id="@+id/ss_ll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textview"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:background="#000000"
@@ -27,5 +34,6 @@
             android:layout_height="wrap_content"
             android:focusable="false"
             android:layout_marginTop="10dp" />
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+    </com.richzjc.scrollview.ScrollLinearLayout>
+</com.richzjc.scrollview.MyNestedScrollView>
+</FrameLayout>
